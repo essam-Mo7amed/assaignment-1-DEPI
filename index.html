@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Lecture 1 Assignment</title>
+  
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section class="registration-form">
+
+        <h1>Employee Registration Form</h1>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <div class="gender">
+
+                <label>
+                    <input type="radio" name="title" value="Mr" checked>
+                    Mr.
+                </label>
+
+                <label>
+                    <input type="radio" name="title" value="Mrs">
+                    Mrs.
+                </label>
+
+                <label>
+                    <input type="radio" name="title" value="Ms">
+                    Ms.
+                </label>
+
+            </div>
+            <div class="form-row">
+                <label for="firstName">First Name</label>
+
+                <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="FirstName">
+            </div>
+
+            <div class="form-row">
+                <label for="lastName">Last Name</label>
+
+                <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="LastName">
+            </div>
+
+            <div class="form-row">
+                <label for="address1">Mail Address1</label>
+
+                <input
+                    type="text"
+                    id="address1"
+                    name="address1">
+            </div>
+
+            <div class="form-row">
+                <label for="address2">Mail Address2</label>
+
+                <input
+                    type="text"
+                    id="address2"
+                    name="address2">
+            </div>
+
+            <div class="form-row">
+                <label for="city">City</label>
+
+                <input
+                    type="text"
+                    id="city"
+                    name="city">
+            </div>
+
+            <div class="form-row">
+                <label for="state">State</label>
+
+                <select id="state" name="state">
+
+                    <option value="Gujarat" selected>Gujarat</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Delhi">Delhi</option>
+
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="zip">Zip</label>
+
+                <input
+                    type="text"
+                    id="zip"
+                    name="zip">
+            </div>
+
+            <div class="form-row">
+                <label for="photo">Upload Photo</label>
+
+                <input
+                    type="file"
+                    id="photo"
+                    name="photo"
+                    accept="image/*">
+            </div>
+
+            <!-- Email -->
+            <div class="form-row">
+                <label for="email">E-Mail</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email">
+            </div>
+
+            <div class="form-row">
+                <label for="mobile">Mobile</label>
+
+                <input
+                    type="tel"
+                    id="mobile"
+                    name="mobile"
+                    placeholder="+91">
+            </div>
+
+            <div class="form-row">
+                <label>Languages known</label>
+
+                <div class="language-options">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="languages"
+                            value="Gujarati"
+                            checked>
+                        Gujarati
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="languages"
+                            value="Hindi"
+                            checked>
+                        Hindi
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="languages"
+                            value="English"
+                            checked>
+                        English
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="languages"
+                            value="Marathi">
+                        Marathi
+                    </label>
+
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="additionalInfo">
+                    Additional Information
+                </label>
+
+                <textarea
+                    id="additionalInfo"
+                    name="additionalInfo"
+                    placeholder="Optional"></textarea>
+            </div>
+
+            <div class="buttons">
+
+                <input type="submit" value="Submit">
+
+                <input type="reset" value="Reset">
+
+            </div>
+
+        </form>
+
+    </section>
+
+
+
+    <section>
+
+        <h1>Specification Table with Hours and Marks</h1>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th rowspan="2">Unit No.</th>
+
+                    <th rowspan="2">Unit Title</th>
+
+                    <th rowspan="2">Teaching Hours</th>
+
+                    <th colspan="4">
+                        Distribution of Theory Marks
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>R Level</th>
+                    <th>U Level</th>
+                    <th>A Level</th>
+                    <th>Total Marks</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>I</td>
+                    <td>Introduction to Internet Technology</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>8</td>
+                </tr>
+
+                <tr>
+                    <td>II</td>
+                    <td>Basics of HTML &amp; CSS</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>8</td>
+                </tr>
+
+                <tr>
+                    <td>III</td>
+                    <td>Active Server Pages 3.0</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>0</td>
+                    <td>12</td>
+                </tr>
+
+                <tr>
+                    <td>IV</td>
+                    <td>Server Side Coding with VBScript and XML</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>14</td>
+                </tr>
+
+                <tr>
+                    <td>V</td>
+                    <td>ASP Objects &amp; Components</td>
+                    <td>10</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>14</td>
+                </tr>
+
+                <tr>
+                    <td>VI</td>
+                    <td>Accessing database with ASP &amp; ADO</td>
+                    <td>10</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>14</td>
+                </tr>
+
+                <tr>
+                    <th colspan="2">Total</th>
+                    <th>42</th>
+                    <th>18</th>
+                    <th>26</th>
+                    <th>26</th>
+                    <th>70</th>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+
+    <section>
+
+        <h1>Text Formatting Tags</h1>
+
+        <table class="text-format-table">
+
+            <thead>
+                <tr>
+                    <th>HTML Tag</th>
+                    <th>Output</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Normal text</td>
+                    <td>hello world</td>
+                </tr>
+
+                <tr>
+                    <td>Font &amp; its attributes</td>
+                    <td>
+                        <font color="blue" size="5">
+                            hello world
+                        </font>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&lt;B&gt;</td>
+                    <td><b>Bold</b></td>
+                </tr>
+
+                <tr>
+                    <td>&lt;I&gt;</td>
+                    <td><i>Italic</i></td>
+                </tr>
+
+                <tr>
+                    <td>&lt;U&gt;</td>
+                    <td><u>Underline</u></td>
+                </tr>
+
+                <tr>
+                    <td>&lt;EM&gt;</td>
+                    <td><em>Emphasis</em></td>
+                </tr>
+
+                <tr>
+                    <td>&lt;STRONG&gt;</td>
+                    <td><strong>STRONG</strong></td>
+                </tr>
+
+                <tr>
+                    <td>&lt;TELETYPE&gt;</td>
+                    <td><tt>TELETYPE</tt></td>
+                </tr>
+
+                <tr>
+                    <td>&lt;CITE&gt;</td>
+                    <td><cite>Citation</cite></td>
+                </tr>
+
+                <tr>
+                    <td>&lt;STRIKE&gt;</td>
+                    <td><strike>strike through text</strike></td>
+                </tr>
+
+                <tr>
+                    <td>&lt;BIG&gt;</td>
+                    <td><big>text in a big font</big></td>
+                </tr>
+
+                <tr>
+                    <td>&lt;SMALL&gt;</td>
+                    <td><small>text in a small font</small></td>
+                </tr>
+
+                <tr>
+                    <td>&lt;SUB&gt;</td>
+                    <td>a<sub>b</sub></td>
+                </tr>
+
+                <tr>
+                    <td>&lt;SUP&gt;</td>
+                    <td>a<sup>b</sup></td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+
+    <section>
+
+        <h1>University Computer Science Program</h1>
+
+        <div class="curriculum">
+
+            <!-- FIRST YEAR -->
+
+            <h2 class="year-title">1. First Year</h2>
+
+            <h3 class="semester-title">Semester 1</h3>
+
+            <ol type="A">
+
+                <li>
+                    Programming Fundamentals
+
+                    <ul>
+                        <li>Variables</li>
+                        <li>Data Types</li>
+                        <li>Operators</li>
+
+                        <li>
+                            Control Structures
+
+                            <ol>
+                                <li>if / else</li>
+                                <li>switch</li>
+                                <li>for loop</li>
+                                <li>while loop</li>
+                            </ol>
+
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    Mathematics
+
+                    <ul>
+                        <li>Algebra</li>
+                        <li>Calculus</li>
+                        <li>Statistics</li>
+                    </ul>
+                </li>
+
+                <li>
+                    Computer Fundamentals
+
+                    <ol type="i">
+                        <li>Computer Hardware</li>
+                        <li>Operating Systems</li>
+                        <li>File Systems</li>
+                    </ol>
+                </li>
+
+            </ol>
+
+
+            <h3 class="semester-title">Semester 2</h3>
+
+            <ol type="A">
+
+                <li>
+                    Object-Oriented Programming
+
+                    <ul>
+                        <li>Classes</li>
+                        <li>Objects</li>
+                        <li>Inheritance</li>
+                        <li>Polymorphism</li>
+                    </ul>
+                </li>
+
+                <li>
+                    Web Development
+
+                    <ol>
+
+                        <li>
+                            HTML
+
+                            <ul>
+                                <li>Headings</li>
+                                <li>Paragraphs</li>
+                                <li>Links</li>
+                                <li>Images</li>
+
+                                <li>
+                                    Lists
+
+                                    <ol type="a">
+                                        <li>Ordered List</li>
+                                        <li>Unordered List</li>
+                                        <li>Nested List</li>
+                                    </ol>
+
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            CSS
+
+                            <ul>
+                                <li>Selectors</li>
+                                <li>Colors</li>
+                                <li>Box Model</li>
+                                <li>Flexbox</li>
+                                <li>Grid</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            JavaScript
+
+                            <ul>
+                                <li>Variables</li>
+                                <li>Functions</li>
+                                <li>Arrays</li>
+                                <li>Objects</li>
+                                <li>DOM</li>
+                            </ul>
+                        </li>
+
+                    </ol>
+                </li>
+
+            </ol>
+
+
+
+            <h2 class="year-title">2. Second Year</h2>
+
+            <ol type="A">
+
+                <li>
+                    Data Structures
+
+                    <ul>
+                        <li>Arrays</li>
+                        <li>Linked Lists</li>
+                        <li>Stacks</li>
+                        <li>Queues</li>
+
+                        <li>
+                            Trees
+
+                            <ol>
+                                <li>Binary Tree</li>
+                                <li>Binary Search Tree</li>
+                                <li>AVL Tree</li>
+                            </ol>
+
+                        </li>
+
+                        <li>
+                            Graphs
+
+                            <ul>
+                                <li>BFS</li>
+                                <li>DFS</li>
+                                <li>Dijkstra</li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    Database Systems
+
+                    <ol type="i">
+
+                        <li>
+                            Database Concepts
+
+                            <ul>
+                                <li>Tables</li>
+                                <li>Rows</li>
+                                <li>Columns</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            SQL
+
+                            <ol>
+                                <li>SELECT</li>
+                                <li>INSERT</li>
+                                <li>UPDATE</li>
+                                <li>DELETE</li>
+                            </ol>
+                        </li>
+
+                        <li>
+                            Database Design
+
+                            <ul>
+                                <li>Primary Keys</li>
+                                <li>Foreign Keys</li>
+                                <li>Relationships</li>
+                                <li>Normalization</li>
+                            </ul>
+                        </li>
+
+                    </ol>
+                </li>
+
+
+                <li>
+                    Operating Systems
+
+                    <ul>
+                        <li>Processes</li>
+                        <li>Threads</li>
+                        <li>Memory Management</li>
+                        <li>File Management</li>
+                    </ul>
+                </li>
+
+            </ol>
+
+
+
+            <h2 class="year-title">3. Third Year</h2>
+
+            <h3>Artificial Intelligence</h3>
+
+            <ol>
+                <li>Machine Learning</li>
+                <li>Deep Learning</li>
+                <li>Neural Networks</li>
+
+                <li>
+                    Algorithms
+
+                    <ul>
+                        <li>Linear Regression</li>
+                        <li>Decision Trees</li>
+                        <li>Clustering</li>
+                    </ul>
+                </li>
+            </ol>
+
+
+            <h3>Cyber Security</h3>
+
+            <ul>
+                <li>Network Security</li>
+                <li>Cryptography</li>
+                <li>Authentication</li>
+                <li>Access Control</li>
+            </ul>
+
+
+
+            <h2 class="year-title">4. Fourth Year</h2>
+
+            <ol type="A">
+
+                <li>Software Engineering</li>
+
+                <li>Cloud Computing</li>
+
+                <li>Mobile Development</li>
+
+                <li>
+                    Graduation Project
+
+                    <ul>
+
+                        <li>
+                            Project Planning
+
+                            <ol>
+                                <li>Choose Topic</li>
+                                <li>Define Requirements</li>
+                                <li>Create Schedule</li>
+                            </ol>
+                        </li>
+
+                        <li>
+                            Development
+
+                            <ul>
+                                <li>Frontend</li>
+                                <li>Backend</li>
+                                <li>Database</li>
+                                <li>Testing</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            Final Submission
+
+                            <ol type="i">
+                                <li>Documentation</li>
+                                <li>Presentation</li>
+                                <li>Demonstration</li>
+                            </ol>
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ol>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
+```
